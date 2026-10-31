@@ -2,7 +2,7 @@ bool running = true;
 
 void RenderMenu() {
     ImGui::Checkbox("box", &esp_enabled);
-    ImGui::ColorEdit4("color", (float*)&esp_box_color);
+    ImGui::ColorEdit4("color", (float*)&esp_box_color_enemy);
     
     if(ImGui::Checkbox("running", &running)) {
         if(!running) {
