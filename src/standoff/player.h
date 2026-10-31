@@ -47,7 +47,7 @@ void DrawBox(const ImRect& r, ImColor col) {
     g_Draw->AddRect(r.Min, r.Max, col,   0, 0, 1.6f);
 }
 
-void player() {
+void player(const Matrix& mat) {
     g_Draw = ImGui::GetBackgroundDrawList();
     if (!esp_enabled) return;
 
