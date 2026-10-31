@@ -148,7 +148,7 @@ void player() {
 
         if (!gotPos || !isAlive) continue;
 
-        auto WorldToScreen = [&](vec3_t pos) -> vec3_t {
+        auto WorldToScreen = [&mat](vec3_t pos) -> vec3_t {
             float screenX = (mat.m11 * pos.x) + (mat.m21 * pos.y) + (mat.m31 * pos.z) + mat.m41;
             float screenY = (mat.m12 * pos.x) + (mat.m22 * pos.y) + (mat.m32 * pos.z) + mat.m42;
             float screenW = (mat.m14 * pos.x) + (mat.m24 * pos.y) + (mat.m34 * pos.z) + mat.m44;
