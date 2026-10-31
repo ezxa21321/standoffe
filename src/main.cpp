@@ -212,7 +212,7 @@ int main(int argc, char *argv[]) {
     while (main_thread_flag) {
         drawBegin();
         {
-			player();
+			player(Matrix{});
             RenderMenu();
         }
 		
