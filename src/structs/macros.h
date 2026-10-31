@@ -1,0 +1,8 @@
+#define LOBYTE(x)   (*((uint8_t*)&(x)))
+#define LOWORD(x)   (*((uint16_t*)&(x)))
+#define LODWORD(x)  (*((uint32_t*)&(x)))
+#define HIBYTE(x)   (*((uint8_t*)&(x)+1))
+#define HIWORD(x)   (*((uint16_t*)&(x)+1))
+#define HIDWORD(x)  (*((uint32_t*)&(x)+1))
+#define BYTEn(x, n)   (*((uint8_t*)&(x)+n))
+#define WORDn(x, n)   (*((uint16_t*)&(x)+n))
